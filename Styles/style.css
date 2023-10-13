@@ -13,7 +13,8 @@ header
     display: flex;
     justify-content: space-between;
 }
-.header h2{
+.header h2,
+.footer-title{
     font-size: 1.8rem;
     margin-top: 40px;
 }
@@ -27,15 +28,17 @@ padding: 30px;
 
 /* influencer-container section styles */
 .btn-primary{
+    font-size: 1rem;
     border-radius: 41px;
 background: #E02C6D;
-padding: 10px 24px;
+padding: 10px 16px;
 border: 2px solid #E02C6D;
 color: white;
 
 
 }
-.influencer-container{
+.influencer-container ,
+.feature-container{
     margin-top: 0;
     display: flex;
 }
@@ -102,6 +105,8 @@ padding: 30px;
 .logo-img{
     display: flex;
     justify-content: space-around;
+    border-top:2px solid  rgba(145, 154, 163, 0.1);
+    border-bottom:2px solid  rgba(145, 154, 163, 0.1);
   
 }
 .logo-img img{
@@ -152,6 +157,29 @@ margin: 20px;
     text-align: end;
 
 }
+/* feature container section styles */
+.title{
+    color: #0A0826;
+font-size: 2.1rem;
+font-weight: 700;
+}
+.feature-container{
+    margin-top: 20px;
+}
+.feature-contant{
+    margin-left: 90px;
+    padding: 10px;
+}
+/* footer styles */
+.footer{
+    padding: 40px;
+    text-align: center;
+    background-color: #0A0826;
+    color: #fff;
+}
+.fa-brands{
+    padding: 10px;
+}
 /* media Quary small device responsive */
 @media screen and (max-width:576px) {
     header{
@@ -167,7 +195,8 @@ li{
     padding: 5px;
 }
 
-.influencer-container{
+.influencer-container,
+.feature-container{
     flex-direction: column-reverse;
 }
 
@@ -199,15 +228,36 @@ main{
 /* logo section */
 .popular-collection{
     grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 10px;
 }
 .logo-img{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     margin-top: 10px;
+    border-top:none;
+    border-bottom:none;
+  
 
 }
 .logo-img img{
     padding: 5px;
     margin: 10px;
 }
+.feature-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+   
+}
+.feature-container img{
+    width: 90%;
+}
+.feature-contant{
+    margin-left: 0;
+    margin-right: 10px;
+    padding: 10px;
+}
+
 }
